@@ -15,6 +15,7 @@ public class SimpleProducer {
     private final static String BOOTSTRAP_SERVERS = "my-kafka:9092";
 
     public static void main(String[] args) {
+        System.out.println("args = " + args);
 
         Properties configs = new Properties();
         configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
