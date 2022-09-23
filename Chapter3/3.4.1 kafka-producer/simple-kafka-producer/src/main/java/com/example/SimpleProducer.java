@@ -16,6 +16,9 @@ public class SimpleProducer {
 
     public static void main(String[] args) {
 
+        System.out.println("args = " + args);
+        System.out.println();
+
         Properties configs = new Properties();
         configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
